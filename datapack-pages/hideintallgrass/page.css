@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(242, 242, 242);
+  font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./nunito.ttf') format('truetype');
+}
+
+.title-container {
+  position: relative;
+  height: 20vh;
+  margin-top: -0.5%;
+}
+  
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#titledescription {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-top: 0;
+}
+
+#back-button {
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: left 0.3s ease;
+}
+
+#back-button:hover {
+  left: 50px;
+}
+
+#back-arrow {
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+#back-button:hover + #back-arrow {
+  transform: translateX(-30px);
+  opacity: 1;
+}
+
+h5 {
+  position: relative;
+}
+
+h5::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+h5:hover::after {
+  width: 100%;
+}
+
+#pack-img {
+  position: absolute;
+  top: 4.5vh;
+  margin-top: 5vh;
+  margin-left: 2vh;
+  border-radius: 10%;
+}

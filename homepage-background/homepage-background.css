@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Meh09pYT0QTqe8JJy1G-MgHaEK%26pid%3DApi&f=1&ipt=cca4870505f2a737b7580311f73ff286cf6f1945620b65925624cbd59e091530&ipo=images");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#back-button {
+    margin: 10px;
+    color: rgb(225, 225, 225);
+    font-size: 40px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: left 0.3s ease;
+}
+
+#back-button:hover {
+    left:55px;
+}
+
+#back-arrow {
+    margin: 10px;
+    color: rgb(225, 225, 225);
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+#back-button:hover + #back-arrow {
+    transform: translateX(-5px);
+    opacity: 1;
+}
