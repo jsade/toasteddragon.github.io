@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Meh09pYT0QTqe8JJy1G-MgHaEK%26pid%3DApi&f=1&ipt=cca4870505f2a737b7580311f73ff286cf6f1945620b65925624cbd59e091530&ipo=images");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./nunito.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RedHatMono';
+    src: url(./RedHatMono.ttf) format('truetype');
+}
+
+#title-container {
+    margin-left: 3%;
+    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-left: 4vh;
+    padding-bottom: 4vh;
+    font-family: 'RedHatMono', sans-serif;
+}
+
+#bigtitle {
+    font-size: 70px;
+    margin-bottom: -13px;
+    font-weight: normal;
+}
+
+#title-description {
+    font-size: 25px;
+    width: 50%;
+    word-wrap: break-word;
+    font-weight: normal;
+}
+
+#toast {
+    width: 60px;
+    height: 60px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px; 
+    margin-right: 3%;
+}
+  
+.link-list {
+    list-style-type: none;
+    padding-right: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    border-radius: 10px;
+}
+  
+.link-list li {
+    margin-bottom: 10px; 
+}
+  
+.link-list li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 60px; 
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+/* Underline */
+.link-list li a::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease;
+}
+
+.link-list li a:hover::before {
+    width: 80%;
+}
+
+
+
+.socials {
+    display: flex;
+    justify-content: left; 
+}
+
+#email {
+    color: rgb(185, 185, 185);
+    transition: transform 0.2s ease-out, color 0.2s ease, box-shadow 0.2s ease, filter 0.25s ease;
+    margin-right: 20px;
+}
+
+#email:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+#discord {
+    color: rgb(185, 185, 185);
+    transition: transform 0.2s ease-out, color 0.2s ease, box-shadow 0.2s ease, filter 0.25s ease;
+    margin-right: 20px;
+}
+    
+#discord:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+#github {
+    color: rgb(185, 185, 185);
+    transition: transform 0.2s ease-out, color 0.2s ease, box-shadow 0.2s ease, filter 0.25s ease;
+    margin-right: 20px;
+}
+
+#github:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+#deviantart {
+    color: rgb(185, 185, 185);
+    transition: transform 0.2s ease-out, color 0.2s ease, box-shadow 0.2s ease, filter 0.25s ease;
+    margin-right: 20px;
+}
+
+#deviantart:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+#background-buttons {
+    color:#ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+  
+#background-size {
+    color:#ffffff;
+    align-self: center;
+    font-weight: normal;
+    transition: font-weight 0.3s ease;
+    text-decoration: none;
+}
+
+#background-size:hover {
+    cursor: pointer;
+    font-weight: bold;
+    
+}
