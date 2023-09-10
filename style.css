@@ -1,0 +1,303 @@
+/*
+HIDE IN TALL GRASS*/
+:root {
+    --text_color: rgb(201, 220, 201);
+    --text_color_selected: rgb(139, 173, 139);
+    --text_color_dark: rgb(39, 45, 39);
+    --background_color: rgb(59, 87, 56);
+    --background_light: rgb(174, 193, 172);
+    --background_dark: rgb(42, 58, 41);
+    --gallery_image: url('https://raw.githubusercontent.com/DragonPoika/HideInTallGrass/main/pack.png');
+}
+
+/* PILLAGER PIRATES
+:root {
+    --text_color: rgb(201, 214, 220);
+    --text_color_selected: rgb(139, 166, 173);
+    --text_color_dark: rgb(39, 39, 45);
+    --background_color: rgb(56, 63, 87);
+    --background_light: rgb(172, 172, 193);
+    --background_dark: rgb(41, 41, 58);
+    --gallery_image: url('https://raw.githubusercontent.com/DragonPoika/PillagerPirates/main/pack.png');
+} */
+
+/* SHADOWFORMS
+:root {
+    --text_color: rgb(201, 204, 220);
+    --text_color_selected: rgb(139, 147, 173);
+    --text_color_dark: rgb(39, 39, 45);
+    --background_color: rgb(23, 24, 27);
+    --background_light: rgb(144, 144, 147);
+    --background_dark: rgb(16, 16, 17);
+    --gallery_image: url('https://raw.githubusercontent.com/DragonPoika/Shadowforms/main/shadowforms-datapack/pack.png');
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif; 
+}
+
+#topbar {
+    width: 100vw;
+    height: 7.5vh;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vh; 
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background_color);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--text_color);
+    text-align: center;
+    padding: 1.5vh 2vh; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: var(--background_dark); 
+}
+
+#gallery {
+    width: 100vw;
+    height: 51vh;
+    margin-top: -1.5vh;
+    padding: 0;
+    background-color: var(--background_color);
+    background-image: var(--gallery_image);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#pfp-container {
+    width: 50vw;
+    height: 43vh;
+    background-color: var(--background_light);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+#pfp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0vh;
+    width: 35vh;
+    height: 35vh;
+    position: relative; 
+    z-index: 0; 
+}
+
+#name {
+    font-size: 5vh;
+    color: var(--text_color_dark);
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+
+#desc-container {
+    color: var(--background_light);
+    width: 50vw;
+    height: 43vh;
+    background-color: var(--background_color);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+#desc {
+    font-size: 2.4vw;
+    padding: 5vh;
+    line-break: auto;
+    padding-top: 8vh;
+}
+
+.socials {
+    font-size: 3.5vw; 
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    transform: translateX(37.5%);
+    text-decoration: none;
+}
+
+
+.socials i {
+    transition: color 0.3s ease;
+    color: var(--background_light)
+}
+
+.socials i:hover {
+    color: var(--text_color_selected);
+}
+
+
+
+
+
+/*
+-----------------------------
+        MOBILE VIEW
+-----------------------------
+*/
+
+@media only screen and (max-width: 900px) {
+    #topbar {
+        width: 100vw;
+        height: 7.5vh;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5vh; 
+    
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--background_color);
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: var(--text_color);
+        text-align: center;
+        padding: 1.5vh 2vh; 
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    li a:hover {
+        background-color: var(--background_dark); 
+    }
+    
+    #gallery {
+        width: 100vw;
+        height: 51vh;
+        margin-top: -1.5vh;
+        padding: 0;
+        background-color: var(--background_color);
+        background-image: var(--gallery_image);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    #pfp-container {
+        width: 0vw;
+        height: 43vh;
+        background-color: var(--background_light);
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; 
+    }
+    
+    #pfp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: -10vh;
+        width: 18vh;
+        height: 18vh;
+        position: relative; 
+        z-index: 0; 
+    }
+    
+    #name {
+        font-size: 5vh;
+        color: var(--background_light);
+        position: absolute; 
+        left: 50vw;
+        top: -8vh;
+        z-index: 2; 
+    }
+    
+    
+    #desc-container {
+        color: var(--background_light);
+        width: 100vw;
+        height: 43vh;
+        background-color: var(--background_color);
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+    
+    #desc {
+        position: absolute;
+        font-size: 2vh;
+        padding: 5vh;
+        bottom: 15vh;
+        line-break: auto;
+        padding-top: 8vh;
+    }
+    
+    .socials {
+        position: absolute;
+        font-size: 10vw; 
+        padding-left: 3vw;
+        padding-right: 3vw;
+        bottom: 5.5vh;
+        right: 40vw;
+        transform: translateX(50%);
+        text-decoration: none;
+        color: var(--background_light)
+    }
+    
+    
+    .socials i {
+        transition: color 0.3s ease;
+    }
+    
+    .socials i:hover {
+        color: var(--text_color_selected);
+    }
+  }
+
+@media only screen and (min-width: 1500px) {
+    .socials {
+        font-size: 2.5vw; 
+    }
+
+    #desc {
+        font-size: 1.8vw;
+        padding: 5vh;
+        line-break: auto;
+        padding-top: 8vh;
+    }
+}
