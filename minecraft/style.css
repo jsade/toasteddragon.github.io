@@ -1,0 +1,67 @@
+:root {
+    --text_color: rgb(201, 220, 201);
+    --text_color_selected: rgb(139, 173, 139);
+    --text_color_dark: rgb(39, 45, 39);
+    --background_color: rgb(59, 87, 56);
+    --background_light: rgb(174, 193, 172);
+    --background_dark: rgb(42, 58, 41);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif; 
+}
+
+#topbar {
+    width: 100vw;
+    height: 7.5vh;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vh; 
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background_color);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--text_color);
+    text-align: center;
+    padding: 1.5vh 2vh; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: var(--background_dark); 
+}
+
+#banner {
+    width: 100vw;
+    height: 20vh;
+    background-image: url(https://raw.githubusercontent.com/ToastedDragon/toasteddragon.github.io/main/images/banners/datapacks.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 6vh;
+}
+
+.datapack {
+    width: 35vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
