@@ -1,0 +1,26 @@
+{
+    "images": [
+      { "imageUrl": "https://raw.githubusercontent.com/DragonPoika/HideInTallGrass/main/pack.png", "linkUrl": "https://beta.smithed.dev" },
+      { "imageUrl": "https://raw.githubusercontent.com/DragonPoika/PillagerPirates/main/pack.png", "linkUrl": "https://example.com/page2" },
+      { "imageUrl": "https://raw.githubusercontent.com/DragonPoika/Shadowforms/main/shadowforms-datapack/pack.png", "linkUrl": "https://example.com/page3" }
+    ],
+    "cssVariables": [
+      {
+        "--text_color": "rgb(201, 220, 201)",
+        "--text_color_selected": "rgb(139, 173, 139)",
+        "--text_color_dark": "rgb(39, 45, 39)",
+        "--background_color": "rgb(59, 87, 56)",
+        "--background_light": "rgb(174, 193, 172)",
+        "--background_dark": "rgb(42, 58, 41)"
+      },
+      {
+        "--text_color": "rgb(201, 214, 220)",
+        "--text_color_selected": "rgb(139, 166, 173)",
+        "--text_color_dark": "rgb(39, 39, 45)",
+        "--background_color": "rgb(56, 63, 87)",
+        "--background_light": "rgb(172, 172, 193)",
+        "--background_dark": "rgb(41, 41, 58)"
+      }
+    ]
+  }
+  
