@@ -1,4 +1,5 @@
 const galleryLink = document.getElementById('gallery-link');
+const gallery = document.getElementById('gallery');
 let currentIndex = 0;
 
 function changeImageAndLink() {
@@ -15,14 +16,21 @@ function changeImageAndLink() {
       // Change the link href
       galleryLink.href = currentImageData.linkUrl;
 
-      // Set the background image
-      galleryLink.style.backgroundImage = `url(${currentImageData.imageUrl})`;
+      // Get the "gallery" element
+      const gallery = document.getElementById('gallery');
+
+      // Apply a smooth transition for the background image
+      gallery.style.transition = `background-image 1s ease`;
+
+      // Set the background image with a transition
+      gallery.style.backgroundImage = `url(${currentImageData.imageUrl})`;
 
       // Get the CSS variable values for the current image
       const currentCssVariables = cssVariableValues[currentIndex];
 
-      // Apply CSS variable values
+      // Apply individual CSS variable transitions
       for (const variable in currentCssVariables) {
+        document.documentElement.style.setProperty(`--transition-properties`, `${variable} 1s ease`);
         document.documentElement.style.setProperty(variable, currentCssVariables[variable]);
       }
 

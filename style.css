@@ -8,6 +8,7 @@ HIDE IN TALL GRASS*/
     --background_light: rgb(174, 193, 172);
     --background_dark: rgb(42, 58, 41);
     --gallery_image: url('https://raw.githubusercontent.com/DragonPoika/HideInTallGrass/main/pack.png');
+    transition: var(--transition-properties, all 2s ease);
 }
 
 /* PILLAGER PIRATES
@@ -83,6 +84,27 @@ li a:hover {
     background-position: center;
 }
 
+.banner-arrows {
+    font-size: 7vw;
+    color: var(--background_light);
+    transition: font-size 0.3s ease;
+}
+
+.banner-arrows:hover {
+    font-size: 7.5vw;
+}
+
+#arrow-left {
+    position: fixed;
+    top: 27vh;
+    left: 2vw;
+}
+
+#arrow-right {
+    position: fixed;
+    top: 27vh;
+    right: 2vw;
+}
 
 #pfp-container {
     width: 50vw;
@@ -155,7 +177,6 @@ li a:hover {
 .socials i:hover {
     color: var(--text_color_selected);
 }
-
 
 
 

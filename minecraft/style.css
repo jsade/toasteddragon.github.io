@@ -5,6 +5,7 @@
     --background_color: rgb(59, 87, 56);
     --background_light: rgb(174, 193, 172);
     --background_dark: rgb(42, 58, 41);
+    
 }
 
 body {
@@ -56,6 +57,7 @@ li a:hover {
     background-position: center;
     position: absolute;
     top: 6vh;
+    transition: background-image 1s ease;
 }
 
 .datapack {
